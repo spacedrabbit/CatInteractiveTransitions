@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		14E4880C1D1B5B0400369976 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4880B1D1B5B0400369976 /* AppDelegate.swift */; };
 		14E4880E1D1B5B0400369976 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4880D1D1B5B0400369976 /* ViewController.swift */; };
-		14E488111D1B5B0400369976 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E4880F1D1B5B0400369976 /* Main.storyboard */; };
 		14E488131D1B5B0400369976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E488121D1B5B0400369976 /* Assets.xcassets */; };
 		14E488161D1B5B0400369976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E488141D1B5B0400369976 /* LaunchScreen.storyboard */; };
 		AEEA8ECD32E20ED74FA554BE /* Pods_CatInteractiveTransitionController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DE5AB51EDEA8A653037FD6 /* Pods_CatInteractiveTransitionController.framework */; };
@@ -19,7 +18,6 @@
 		14E488081D1B5B0400369976 /* CatInteractiveTransitionController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatInteractiveTransitionController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14E4880B1D1B5B0400369976 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14E4880D1D1B5B0400369976 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		14E488101D1B5B0400369976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		14E488121D1B5B0400369976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14E488151D1B5B0400369976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14E488171D1B5B0400369976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,6 +38,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1452EC541D1B5E1F00A3CD7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14E488121D1B5B0400369976 /* Assets.xcassets */,
+				14E488141D1B5B0400369976 /* LaunchScreen.storyboard */,
+				14E488171D1B5B0400369976 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		14E487FF1D1B5B0300369976 = {
 			isa = PBXGroup;
 			children = (
@@ -63,10 +71,7 @@
 			children = (
 				14E4880B1D1B5B0400369976 /* AppDelegate.swift */,
 				14E4880D1D1B5B0400369976 /* ViewController.swift */,
-				14E4880F1D1B5B0400369976 /* Main.storyboard */,
-				14E488121D1B5B0400369976 /* Assets.xcassets */,
-				14E488141D1B5B0400369976 /* LaunchScreen.storyboard */,
-				14E488171D1B5B0400369976 /* Info.plist */,
+				1452EC541D1B5E1F00A3CD7E /* Supporting Files */,
 			);
 			path = CatInteractiveTransitionController;
 			sourceTree = "<group>";
@@ -151,7 +156,6 @@
 			files = (
 				14E488161D1B5B0400369976 /* LaunchScreen.storyboard in Resources */,
 				14E488131D1B5B0400369976 /* Assets.xcassets in Resources */,
-				14E488111D1B5B0400369976 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,14 +222,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		14E4880F1D1B5B0400369976 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				14E488101D1B5B0400369976 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		14E488141D1B5B0400369976 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

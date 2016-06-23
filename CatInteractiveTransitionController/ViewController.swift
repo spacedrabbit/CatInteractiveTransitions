@@ -8,18 +8,55 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIViewControllerTransitioningDelegate,
+  UIViewControllerInteractiveTransitioning, UIViewControllerAnimatedTransitioning {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
   }
 
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
   }
 
 
+  // MARK: - UIViewController Transitioning Delegate
+  // Manages all of the rest of the transitioning portions, both animated and interactive
+
+  func interactionControllerForPresentation(animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+    return nil
+  }
+  
+  func interactionControllerForDismissal(animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+    return nil
+  }
+  
+  // this protocol function is required if using interactionControllerForPresentation(_:)
+  func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    return nil
+  }
+  
+  // this protocol function is required if using interactionControllerForDismissal(_:)
+  func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    return nil
+  }
+  
+  
+  // MARK: - UIViewController Interactive Transitioning
+  // responsible for managing interaction state
+  func startInteractiveTransition(transitionContext: UIViewControllerContextTransitioning) {
+    
+  }
+  
+  
+  // MARK: - UIViewController Animated Transitioning 
+  func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+    
+  }
+  
+  func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    return 1.0
+  }
+  
 }
 
