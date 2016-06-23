@@ -18,11 +18,19 @@ class ViewController: UIViewController, UIViewControllerTransitioningDelegate,
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
+  
+  lazy internal var panGesture: UIPanGestureRecognizer = {
+    let panSel = #selector(ViewController.panInitiatedTransitionBegan(_:))
+    let pGes: UIPanGestureRecognizer = UIPanGestureRecognizer(target: self, action: panSel)
+    return pGes
+  }()
 
+  internal func panInitiatedTransitionBegan(sender: UIPanGestureRecognizer) {
+    
+  }
 
   // MARK: - UIViewController Transitioning Delegate
   // Manages all of the rest of the transitioning portions, both animated and interactive
-
   func interactionControllerForPresentation(animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
     return nil
   }
